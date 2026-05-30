@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"start_node\startup_stm32f103xb.o"
+"start_node\main.o"
+"start_node\gpio.o"
+"start_node\spi.o"
+"start_node\usart.o"
+"start_node\stm32f1xx_it.o"
+"start_node\stm32f1xx_hal_msp.o"
+"start_node\nrf24l01p.o"
+"start_node\stm32f1xx_hal_gpio_ex.o"
+"start_node\stm32f1xx_hal_spi.o"
+"start_node\stm32f1xx_hal.o"
+"start_node\stm32f1xx_hal_rcc.o"
+"start_node\stm32f1xx_hal_rcc_ex.o"
+"start_node\stm32f1xx_hal_gpio.o"
+"start_node\stm32f1xx_hal_dma.o"
+"start_node\stm32f1xx_hal_cortex.o"
+"start_node\stm32f1xx_hal_pwr.o"
+"start_node\stm32f1xx_hal_flash.o"
+"start_node\stm32f1xx_hal_flash_ex.o"
+"start_node\stm32f1xx_hal_exti.o"
+"start_node\stm32f1xx_hal_uart.o"
+"start_node\system_stm32f1xx.o"
+--strict --scatter "Start_Node\Start_Node.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Start_Node.map" -o Start_Node\Start_Node.axf
